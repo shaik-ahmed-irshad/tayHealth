@@ -80,6 +80,15 @@
   background-color: #2fc4b2;
   color: #fff;
 }
+
+.myImgCenter {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.myImgVerCenter{
+  margin-top: 30px !important;
+  margin-bottom: auto !important;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

@@ -34,6 +34,42 @@
   p {
     font-size: 18px;
   }
+
+  
+.serviceDetails {
+  color: #18272F;
+  position: relative;
+  text-decoration: none;
+}
+
+.serviceDetails::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #2fc4b2;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.serviceDetails:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Presentational Styles */
+/* body {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  height: 100vh;
+  place-items: center;
+} */
   </style>
   <body>
 
@@ -101,7 +137,7 @@
         <div class="container-fluid px-0">
           <div class="row no-gutters align-items-stretch">
             <div class="col-6 col-sm-6 col-md col-lg h-100">
-              <a href="#" class="service">
+              <a href="#" class="service ">
                 <div class="icon-wrap">
                   <span ><i class="fa fa-user-md" style="font-size:48px;"></i></span>
                 </div>
@@ -149,73 +185,52 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mb-4">
-              <a href="#" class="d-flex service-2">
-                <div class="icon-wrap">
-                  <span class="flaticon-acupuncture"></span>
-                </div>
-                <div class="contents">
-                  <h3>Lorem ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid incidunt. Officia minus quae quasi earum!</p>
+              <a href="DHA.html" class="d-flex service-2 serviceDetails">
+                
+                <div class="contents ">
+                  <h3>Dubai Health Authority (DHA)</h3>
+                  <p>Dubai Health authority (DHA) licensing packages helps with the application process for all healthcare professionals who wish to pursue their career in hospitals and clinics in Dubai.</p>
                 </div>
               </a>
             </div>
             <div class="col-lg-6 mb-4">
-              <a href="#" class="d-flex service-2">
-                <div class="icon-wrap">
-                  <span class="flaticon-acupuncture-1"></span>
-                </div>
+              <a href="DOH.html" class="d-flex service-2 serviceDetails">
+                
                 <div class="contents">
-                  <h3>Adipisicing Elit</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid incidunt. Officia minus quae quasi earum!</p>
+                  <h3>Department of Health(DOH)</h3>
+                  <p>Department of Health (DOH) licensing packages helps with the application process for all healthcare professionals who wish to pursue their career in hospitals and clinics in Abu Dhabi and Al Ain.</p>
                 </div>
               </a>
             </div>
 
             <div class="col-lg-6 mb-4">
-              <a href="#" class="d-flex service-2">
-                <div class="icon-wrap">
-                  <span class="flaticon-therapy"></span>
-                </div>
+              <a href="MOH.html" class="d-flex service-2 serviceDetails">
+                
                 <div class="contents">
-                  <h3>Eveniet Nostrum Omnis</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid incidunt. Officia minus quae quasi earum!</p>
+                  <h3>Ministry of Health (MOH)</h3>
+                  <p>Ministry of Health (MOH) licensing packages helps with the application process for all healthcare professionals who wish to pursue their career in hospitals and clinics in Ajman, Fujairah, Ras al-Khaimah and Umm al-Quwain.</p>
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 mb-4">
-              <a href="#" class="d-flex service-2">
-                <div class="icon-wrap">
-                  <span class="flaticon-herbal"></span>
-                </div>
+            <div class="col-lg-6 mb-4 ">
+              <a href="#" class="d-flex service-2 serviceDetails">
+                
                 <div class="contents">
-                  <h3>Officia Minus</h3>
+                  <h3>Service 4</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid incidunt. Officia minus quae quasi earum!</p>
                 </div>
               </a>
             </div>
 
-            <div class="col-lg-6 mb-4">
-              <a href="#" class="d-flex service-2">
-                <div class="icon-wrap">
-                  <span class="flaticon-lithotherapy"></span>
-                </div>
+            <div class="col-lg mb-4">
+              <a href="#" class="d-flex service-2 serviceDetails">
                 <div class="contents">
-                  <h3>Eveniet Nostrum Omnis</h3>
+                  <h3>Service 5</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid incidunt. Officia minus quae quasi earum!</p>
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 mb-4">
-              <a href="#" class="d-flex service-2">
-                <div class="icon-wrap">
-                  <span class="flaticon-acupuncture-2"></span>
-                </div>
-                <div class="contents">
-                  <h3>Officia Minus</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid incidunt. Officia minus quae quasi earum!</p>
-                </div>
-              </a>
-            </div>
+            
 
           </div>
         </div>
@@ -229,7 +244,7 @@
               <p class="mb-0 opa-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
             </div>
             <div class="col-lg-5 text-md-right">
-              <a href="#" class="btn btn-primary btn-white">Contact us now</a>
+              <a href="mailto:info@tayhealthcare.com" class="btn btn-primary btn-white">Email Us Now</a>
             </div>
           </div>
         </div>
