@@ -103,15 +103,15 @@ body {
     center top/cover;
 }
 .slide:nth-child(2) {
-  background: url('images/hero-hc.jpg') no-repeat
+  background: url('images/hero-bg-3.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {
-  background: url('images/pharma.jpg') no-repeat
+  background: url('images/hero-bg-2.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(4) {
-  background: url('images/hero-contact.jpg') no-repeat
+  background: url('images/hero-bg-4.jpg') no-repeat
     center top/cover;
 }
 /* .slide:nth-child(5) {
