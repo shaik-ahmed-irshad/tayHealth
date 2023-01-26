@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+  }
+  
+  /* body {
+    background-color: #171717;
+  } */
+  
+  .wrapper {
+    position: relative;
+    width: 80vw;
+    transform:  translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .containerCounter {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 10px solid #2fc4b2;
+  }
+  
+ i{
+    color:#ffffff;
+    font-size: 1.5em;
+    text-align: center;
+  
+  }
+  .wrapper i{
+    color:#2fc4b2;
+    font-size: 2.5em;
+    text-align: center;
+  
+  }
+  span.num {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+  
+  span.text {
+    color: #e0e0e0;
+    font-size: 1.1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+  }
+  
+  @media screen and (max-width:1024px) {
+    .wrapper {
+      width: 85vw;
+    }
+    .containerCounter {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrapper{
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  
+    .containerCounter {
+      width: calc(50% -40px);
+      height: 30vmin;
+      font-size: 13px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .wrapper{
+      gap: 15px;
+    }
+  
+    .containerCounter {
+      width: 70%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+  }
